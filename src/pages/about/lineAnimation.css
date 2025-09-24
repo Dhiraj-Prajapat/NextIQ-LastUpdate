@@ -1,0 +1,7 @@
+.line {
+    transition: stroke-dashoffset 2s ease-out;
+  }
+  
+  .animate {
+    stroke-dashoffset: 0;
+  }

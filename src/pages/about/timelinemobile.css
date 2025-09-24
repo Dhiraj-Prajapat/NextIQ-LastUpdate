@@ -1,0 +1,13 @@
+/* @media (min-width: 404px) and (max-width: 480px) {
+
+    .content_gap {
+        gap: 56px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 640px) {
+
+    .content_gap {
+        gap: 72px;
+    }
+} */

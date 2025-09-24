@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@theme {
+  --breakpoint-3xs: 19rem;
+  --breakpoint-2xs: 21rem;
+  --breakpoint-xs: 27rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, white, black);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  }
+
+
+.scrollbtnHidden{
+  display: none;
+}
+
+/* ----- Overlay ----- */
+.overlay {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.gridLine {
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+  z-index: 10px;
+  perspective: 450px;
+}
+
+.grid-fade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 11;
+  /* background: radial-gradient(ellipse at 50% 50%, rgba(14, 20, 22, 0) 0%, #0e1416 99%); */
+}
+
+.grid-lines {
+  width: 100%;
+  height: 150%;
+  opacity: 0.2;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0.5px, transparent 0), linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0.5px, transparent 0);
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  transform-origin: 100% 0 0;
+  animation: play 30s linear infinite;
+}
+
+@keyframes play {
+  0% {
+    transform: rotateX(40deg) translateY(-50%);
+  }
+  100% {
+    transform: rotateX(40deg) translateY(0);
+  }
+}
+
+.solution-dropdown:hover .down-icon {
+  rotate: 90deg;
+}
